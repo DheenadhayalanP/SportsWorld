@@ -1,51 +1,10 @@
-// import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
-// import axios from "axios";
-
-// export default function ProductDetail() {
-//     const { id } = useParams();
-//     const [product, setProduct] = useState(null);
-//     const [qty, setQty] = useState(1);
-
-//     useEffect(() => {
-//         axios.get(`http://localhost:5000/get-product/${id}`)
-//             .then(res => setProduct(res.data.products));
-//     }, [id]);
-
-//     async function orderNow() {
-//         const res = await axios.post("http://localhost:5000/create-order", {
-//             productId: product._id,
-//             quantity: qty
-//         });
-//         alert(res.data.message);
-//     }
-
-//     if (!product) return <p>Loading...</p>;
-
-//     return (
-//         <div className="max-w-lg mx-auto mt-10 p-6 border rounded shadow">
-//             <h2 className="text-2xl font-bold">{product.product}</h2>
-//             <p className="mt-2">Price: ₹ {product.price}</p>
-
-//             <input type="number" min="1" value={qty} onChange={(e) => setQty(e.target.value)} className="border p-2 mt-4 w-20" />
-
-//             <button onClick={orderNow} className="bg-green-600 text-white p-2 px-4 rounded mt-4 block" >
-//                 Order Now
-//             </button>
-//         </div>
-//     );
-// }
-
-
-
-
-
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function ProductDetail() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const [product, setProduct] = useState(null);
     const [qty, setQty] = useState(1);
     const [loading, setLoading] = useState(false);
@@ -110,6 +69,7 @@ export default function ProductDetail() {
             const res = await axios.post(url, payload, { timeout: 15000 });
             console.log("Order success:", res.status, res.data);
             alert(res.data?.message || "Order created");
+            navigate("/my-orders");
         } catch (err) {
             console.error("Order error (axios):", err);
             if (err.response) {
