@@ -1,0 +1,103 @@
+.cart-page {
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  
+}
+
+.cart-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+#all {
+  overflow-x: auto; 
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+thead {
+  background: #f8f9fa;
+}
+
+th, td {
+  text-align: center;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+th {
+  font-weight: 600;
+  color: #444;
+}
+
+tr:hover {
+  background: #fffefe;
+}
+
+#remove{
+  display: flex;
+  flex-direction: column;
+}
+
+#click {
+  background: #fc3b3b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+#click:hover {
+  background: #e60000;
+}
+
+
+#click1 {
+  background: #3b88fc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+#click1:hover {
+  background: #004fc6;
+}
+
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+
+@media (max-width: 870px) {
+  th, td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}

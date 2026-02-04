@@ -1,0 +1,29 @@
+#bg{
+    background-image: url(../Img/bg.png);
+    width: 100%;
+    position: fixed;
+    margin: 0;
+}
+img{
+    display: flex;
+    justify-self: center;
+}
+#name{
+    display: flex;
+    justify-self: center;
+}
+#all{
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(224, 210, 219, 0.356);
+}
+#all1{
+    width: 80%;
+    margin: auto;
+}
+p{
+    text-align: justify;
+}
+

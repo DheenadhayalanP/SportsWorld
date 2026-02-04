@@ -1,0 +1,135 @@
+.dtapestry-page {
+  padding-top: 110px;
+}
+
+
+.dtap-img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dtap-img img {
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.dtap-img img:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
+
+
+
+.size-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.size-buttons button {
+  padding: 8px 15px;
+  border: 1px solid #a6a4a4;
+  background: #f5f5f5;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.size-buttons button.active {
+  background: aquamarine;  
+  color: #000;
+  font-weight: bold;
+  border-color: #000;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.buy{
+    margin: 20px;
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+.buy:hover{
+    background-color: rgb(93, 93, 176);
+}
+
+
+
+
+.accordion {
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  width: 120%;
+}
+
+.accordion-header {
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header:hover {
+  background: #f9f9f9;
+}
+
+.accordion-content {
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 1005;
+  line-height: 1.5;
+  color: #333;
+}
+
+.split{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #ddd;
+  width: 80%;
+  border-radius: 10px;
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.dtapestry-card {
+  border-right: 2px solid #ddd;
+  padding-top: 30px;
+  padding-right: 90px;
+  background: #fff;
+  text-align: center;
+}
+
+
+
+
+.rating{
+    margin-top: 10px;
+}
+
+
