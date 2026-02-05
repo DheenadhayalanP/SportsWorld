@@ -1,0 +1,54 @@
+footer {
+    font-weight: 450;
+  font-size: 1.2rem;
+  background-color:rgb(93, 93, 176);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+footer div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+footer img {
+  max-width: 180px;
+  margin-bottom: 15px;
+}
+
+#so1{
+    margin-top: 5px;
+}
+
+footer li {
+  list-style: none;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer li:hover {
+  color: #00c3ff;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  #logo1{
+    display: flex;
+    margin-top: -35px;
+    margin-right: 25px;
+    width: 60%;
+  }
+}
+
+

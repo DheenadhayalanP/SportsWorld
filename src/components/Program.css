@@ -1,0 +1,60 @@
+.ourprogram{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+}
+#ourprogram{
+    background-color: rgba(60, 60, 169, 0.5);
+    min-height: 100vh;
+}
+.pro{
+    display: flex;
+}
+
+.program-box {
+  position: relative;
+  width: 300px;
+  height: 330px;
+  margin: 20px 35px;
+}
+
+.base-img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.hover-overlay img {
+  width: 80px;  
+  height: 80px;
+}
+
+.hover-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 60, 169, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.program-box:hover .hover-overlay {
+  opacity: 1;
+}
+
+p{
+    margin-bottom: -25px;
+}
+.col{
+    color: rgb(26, 26, 86);
+}

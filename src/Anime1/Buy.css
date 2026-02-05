@@ -1,0 +1,32 @@
+.buy-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.buy-details {
+  margin-bottom: 20px;
+}
+
+.buy-details img {
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.buy-btn {
+  padding: 12px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background: #218838;
+}

@@ -1,0 +1,96 @@
+.tapestry-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 20px;
+}
+
+.tapestry {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 315px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ 
+
+.tapestry-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tapestry-nav button {
+  padding: 6px 12px;
+  border: none;
+  background: rgba(93, 93, 176, 0.388);
+  color: #040000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tapestry-nav button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.tapestry-nav button:hover {
+ background-color: rgb(130, 130, 182);
+}
+
+
+img, h2{
+  cursor: pointer;
+}
+
+
+
+.tapestry-img-wrapper {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  cursor: pointer;
+}
+
+.tapestry-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.6s ease-in-out, transform 0.8s ease-in-out;
+  border-radius: 8px; 
+}
+
+
+.tapestry-img-wrapper .normal-img {
+  opacity: 1;
+  z-index: 1;
+}
+
+.tapestry-img-wrapper .hover-img {
+  opacity: 0;
+  z-index: 2;
+}
+
+.tapestry-img-wrapper:hover .normal-img {
+  opacity: 0;
+}
+
+.tapestry-img-wrapper:hover .hover-img {
+  opacity: 1;
+}
+
+button{
+  padding: 6px;
+}
+#but{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+button:hover{
+  background-color: rgba(0, 255, 255, 0.312);
+}
