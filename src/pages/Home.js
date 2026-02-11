@@ -7,7 +7,7 @@ export default function Home() {
 
     useEffect(() => { 
         axios
-            .get("http://localhost:5000/get-product")
+            .get("https://sportsworld-backend-ltmm.onrender.com/get-product")
             .then(res => setProducts(res.data.products || []))
             .catch(() => setProducts([]));
     }, []);

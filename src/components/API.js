@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    // baseURL: "http://localhost:5000"
-    baseURL: "https://sportsworld-backend-ltmm.onrender.com"
+    baseURL: "http://localhost:5000"
 });
 
 api.interceptors.request.use((config) => {
